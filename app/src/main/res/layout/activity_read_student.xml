@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- Student List -->
+    <TextView
+        android:id="@+id/tvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Loading students..."
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="top|start" />
+</RelativeLayout>

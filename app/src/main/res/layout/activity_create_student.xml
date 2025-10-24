@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp">
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etName"
+        android:layout_marginBottom="8dp" />
+    <!-- Age Field -->
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:layout_below="@id/etEmail"
+        android:layout_marginBottom="8dp" />
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/etAge"
+        android:layout_marginBottom="16dp" />
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSubmit"
+        android:visibility="gone" />
+    <!-- Response TextView -->
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Response"
+        android:layout_below="@id/progressBar"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/btnNavigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:layout_below="@id/tvResponse"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/btnNavigate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_below="@id/btnNavigate"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+    <!-- Navigate Button -->
+    <Button
+        android:id="@+id/btnNavigate3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_below="@id/btnNavigate2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
