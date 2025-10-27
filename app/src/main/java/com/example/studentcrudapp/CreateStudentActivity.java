@@ -102,7 +102,8 @@ public class CreateStudentActivity extends AppCompatActivity {
                 } else {
                     try {
                         String errorMessage = response.errorBody() != null ? response.errorBody().string() : "Unknown server error";
-                        showErrorDialog(errorMessage);
+//                        showErrorDialog(errorMessage); instead of showing server response errorBody show a simple message Request Failed
+                        showErrorDialog("Request Failed");
                     } catch (Exception e) {
                         showErrorDialog("Failed to process the server response!");
                     }

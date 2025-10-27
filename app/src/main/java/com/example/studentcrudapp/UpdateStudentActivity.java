@@ -96,7 +96,8 @@ public class UpdateStudentActivity extends AppCompatActivity {
                     } catch (Exception ex) {
                         Log.w(TAG, "error reading errorBody", ex);
                     }
-                    showErrorDialog(serverMessage);
+//                    instead of showing server response errorBody show a simple message Request Failed
+                    showErrorDialog("Request Failed");
                 }
             }
 

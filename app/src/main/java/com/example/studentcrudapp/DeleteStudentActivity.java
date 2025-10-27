@@ -63,8 +63,10 @@ public class DeleteStudentActivity extends AppCompatActivity {
                     } else {
                         try {
                             String errorMessage = response.errorBody().string(); // Parse error response if needed
+//                            showErrorDialog("id "+id+" Does not exist But Cleared Anyway!!!");
                             showErrorDialog(errorMessage);
                         } catch (Exception e) {
+
                             showErrorDialog("Failed to delete student!");
                         }
                     }
