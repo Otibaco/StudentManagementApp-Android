@@ -37,5 +37,12 @@ This project is designed for **educational purposes** and demonstrates the use o
 ## Setup Instructions
 
 1. Clone the repository:
-```bash
+``bash
 git clone https://github.com/yourusername/StudentManagementApp-Android.git
+
+
+2.Open the project in Android Studio.
+
+3.Connect it with the backend API (optional, see backend repo).
+
+4.Build and run the app on an Android emulator or device.
